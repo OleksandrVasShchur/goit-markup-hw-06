@@ -454,6 +454,7 @@ img {
 }
 .pacage-footer-link {
   margin-left: 120px;
+  margin-right: 80px;
 }
 
 .futer-subtitle {
@@ -493,6 +494,58 @@ img {
   height: 24px;
   fill: var(--color-fon);
 }
+
+/* --------стилі форми футера---------- */
+
+.input-mail-fotter {
+  display: flex;
+  flex-direction: column;
+}
+.describ-subscrib {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.field-imput-mail {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--universal-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.join-button {
+  position: relative;
+  width: 165px;
+}
+.button-send-mail {
+ 
+  /* width: 165px; */
+  margin-top: 0;
+}
+
+.svg-airplane {
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+/* --------/стилі форми футера---------- */
 
 /* -----------/футер-------------- */
 
@@ -655,9 +708,9 @@ img {
   appearance: none;
 }
 .check:checked + .icon-policy-check {
- fill: var(--color-fon);
- background: #404bbf;
- border: 1.25px solid #404bbf; 
+  fill: var(--color-fon);
+  background: #404bbf;
+  border: 1.25px solid #404bbf;
 }
 .text-policy {
   position: relative;
@@ -684,21 +737,10 @@ img {
   width: 16px;
   height: 16px;
   padding: 2px;
-  fill:  #FCFCFC;;
+  fill: #fcfcfc;
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
 }
-
-
-/* .join-package {
-  position: relative;
-}
-.svg-input-style {
-position: absolute;
-top: 50%;
-left: 0;
-transform: translate(0, -50%);
-} */
 
 /* ----------/Стилі форми---------------------- */
 

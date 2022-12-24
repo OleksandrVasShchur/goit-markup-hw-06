@@ -434,18 +434,20 @@
           </ul>
         </div>
 
-        <form>
+        <form class="box-subscribe">
           <label class="input-mail-fotter">
             <span class="describ-subscrib">Subscribe</span>
             <input
               class="field-imput-mail"
               type="email"
-              name=""
+              name="user-subscrebe"
               placeholder="E-mail"
             />
           </label>
           <div class="join-button">
-            <button class="button-send-mail buttons-style" type="submit">Subscribe</button>
+            <button class="button-send-mail buttons-style" type="submit">
+              Subscribe
+            </button>
             <svg class="svg-airplane">
               <use href="./images/sprite-original.svg#icon-frame"></use>
             </svg>
@@ -462,64 +464,65 @@
         </button>
 
         <form class="style-form">
-          <span class="call-to-action">
+          <p class="action text-describ">
             Leave your contacts and we will call you back
-          </span>
+          </p>
+          <div>
+            <label class="form-field">
+              <span class="text-form-style">Name</span>
+              <div class="input-svg-together">
+                <input
+                  type="text"
+                  name="uses-name"
+                  class="field-input"
+                  required
+                  pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+                />
+                <svg class="svg-input">
+                  <use href="./images/sprite-original.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
 
-          <label class="form-field">
-            <span class="text-form-style">Name</span>
-            <div class="input-svg-together">
-              <input
-                type="text"
-                name="uses-name"
-                class="field-input"
-                required
-                pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
-              />
-              <svg class="svg-input">
-                <use href="./images/sprite-original.svg#icon-person"></use>
-              </svg>
-            </div>
-          </label>
+            <label class="form-field">
+              <span class="text-form-style">Phone</span>
+              <div class="input-svg-together">
+                <input
+                  type="tel"
+                  name="user-phone"
+                  class="field-input"
+                  required
+                />
+                <svg class="svg-input svg-phone-size">
+                  <use href="./images/sprite-original.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
 
-          <label class="form-field">
-            <span class="text-form-style">Phone</span>
-            <div class="input-svg-together">
-              <input
-                type="tel"
-                name="user-phone"
-                class="field-input"
-                required
-              />
-              <svg class="svg-input svg-phone-size">
-                <use href="./images/sprite-original.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </label>
+            <label class="form-field">
+              <span class="text-form-style">Email</span>
+              <div class="input-svg-together">
+                <input
+                  type="email"
+                  name="user-mail"
+                  class="field-input"
+                  required
+                />
+                <svg class="svg-input">
+                  <use href="./images/sprite-original.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
 
-          <label class="form-field">
-            <span class="text-form-style">Email</span>
-            <div class="input-svg-together">
-              <input
-                type="email"
-                name="user-mail"
-                class="field-input"
-                required
-              />
-              <svg class="svg-input">
-                <use href="./images/sprite-original.svg#icon-email"></use>
-              </svg>
-            </div>
-          </label>
-
-          <label>
-            <span class="text-form-style">Comment</span>
-            <textarea
-              class="page-for-coments"
-              name="user-message"
-              placeholder="Text input"
-            ></textarea>
-          </label>
+            <label>
+              <span class="text-form-style">Comment</span>
+              <textarea
+                class="page-for-coments"
+                name="user-message"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
 
           <div class="box-policy">
             <label class="text-policy" for="user-privacy-policy">

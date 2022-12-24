@@ -496,10 +496,17 @@ img {
 }
 
 /* --------стилі форми футера---------- */
+.box-subscribe {
+  position: relative;
+  display: flex;
+  width: 453px;
+  height: 80px;
+}
 
 .input-mail-fotter {
   display: flex;
   flex-direction: column;
+  margin-right: 24px;
 }
 .describ-subscrib {
   margin-bottom: 16px;
@@ -527,21 +534,33 @@ img {
   border-radius: 4px;
 }
 .join-button {
-  position: relative;
-  width: 165px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 170px;
+  height: 40px;
 }
 .button-send-mail {
- 
-  /* width: 165px; */
+  position: absolute;
+  display: inline-block;
   margin-top: 0;
+  padding: 8px;
+  padding-right: 64px;
+  padding-left: 24px;
+  height: 100%;
+  font-weight: 500;
 }
 
 .svg-airplane {
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: 24px;
+
   width: 24px;
   height: 24px;
+  cursor: pointer;
+  pointer-events: none;
   fill: #ffffff;
 }
 
@@ -574,7 +593,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 576px;
   padding: 24px;
   padding-top: 72px;
 
@@ -615,17 +633,13 @@ img {
 * -----------/Бекдроп і модальне вікно----------- */
 
 /* ----------Стилі форми---------------------- */
-.call-to-action {
+.action {
   display: inline-block;
-  margin-right: auto;
-  margin-left: auto;
-
-  margin-bottom: 16px;
+  padding-left: 12px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
 
   color: var(--universal-color);
 }
@@ -638,6 +652,7 @@ img {
   height: 58px;
 }
 .text-form-style {
+  display: inline-block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -645,9 +660,12 @@ img {
 
   letter-spacing: 0.04em;
   color: #8e8f99;
+  cursor: pointer;
 }
 .input-svg-together {
   position: relative;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
 .field-input {
   display: inline-block;
@@ -706,6 +724,8 @@ img {
 }
 .check {
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .check:checked + .icon-policy-check {
   fill: var(--color-fon);
@@ -727,6 +747,7 @@ img {
   margin-top: 0;
   width: 169px;
   height: 56px;
+  font-weight: 500;
 }
 .link-policy {
   margin-left: 4px;

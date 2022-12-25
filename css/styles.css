@@ -499,6 +499,7 @@ img {
 .box-subscribe {
   position: relative;
   display: flex;
+  align-items: flex-end;
   width: 453px;
   height: 80px;
 }
@@ -534,31 +535,26 @@ img {
   border-radius: 4px;
 }
 .join-button {
-  position: absolute;
   right: 0;
   bottom: 0;
 
   width: 170px;
-  height: 40px;
 }
 .button-send-mail {
-  position: absolute;
-  display: inline-block;
+  display: flex;
+  gap: 16px;
   margin-top: 0;
   padding: 8px;
-  padding-right: 64px;
+  padding-right: 24px;
   padding-left: 24px;
-  height: 100%;
+  height: 40px;
   font-weight: 500;
 }
 
 .svg-airplane {
-  position: absolute;
-  top: 8px;
-  right: 24px;
-
   width: 24px;
   height: 24px;
+  align-items: center;
   cursor: pointer;
   pointer-events: none;
   fill: #ffffff;
@@ -635,21 +631,25 @@ img {
 /* ----------Стилі форми---------------------- */
 .action {
   display: inline-block;
+  box-sizing: border-box;
   padding-left: 12px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
   color: var(--universal-color);
 }
 .style-form {
   display: flex;
   flex-direction: column;
 }
+.join-form-field {
+  margin-bottom: 16px;
+}
 
 .form-field {
-  height: 58px;
+  display: block;
+  margin-bottom: 8px;
 }
 .text-form-style {
   display: inline-block;
@@ -664,7 +664,6 @@ img {
 }
 .input-svg-together {
   position: relative;
-  margin-bottom: 8px;
   cursor: pointer;
 }
 .field-input {
@@ -698,7 +697,6 @@ img {
   width: 100%;
   height: 120px;
   padding: 8px 16px;
-  margin-bottom: 16px;
   resize: none;
 
   font-weight: 400;
@@ -718,8 +716,6 @@ img {
   height: 16px;
   margin-right: 8px;
   align-items: baseline;
-
-  /* border: 1.25px solid #2e2f42; */
   border-radius: 2px;
 }
 .check {

@@ -626,21 +626,21 @@ img {
   border: transparent;
 }
 
-* -----------/Бекдроп і модальне вікно----------- */
+/* -----------/Бекдроп і модальне вікно----------- */
 
 /* ----------Стилі форми---------------------- */
 
 .action {
   box-sizing: border-box;
-  padding-left: 12px;
+  text-align: center;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: red;
-
-  /* color: var(--universal-color); */
+  color: var(--universal-color);
 }
+
 .style-form {
   display: flex;
   flex-direction: column;
